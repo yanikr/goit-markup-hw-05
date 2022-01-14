@@ -42,7 +42,7 @@
             <section class="section hero">
                 <div class="container">
                 <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="button" type="button">Заказать услугу</button>
+                <button class="button" type="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
             <section class="section feature-section">
@@ -93,12 +93,21 @@
                     <ul class="list abilities-container">
                         <li class="abilities-item">
                             <img src="./images/development.jpg" alt="Разработка" width="370" height="294">
+                            <div class="abilities-box">
+                                <p class="abilities-text">Десктопные приложения</p>
+                            </div>
                         </li>
                         <li class="abilities-item">
                             <img src="./images/adapt.jpg" alt="Адаптация" width="370" height="294">
+                            <div class="abilities-box">
+                                <p class="abilities-text">Мобильные приложения</p>
+                            </div>
                         </li>
                         <li class="abilities-item">
                             <img src="./images/design.jpg" alt="Дизайн" width="370" height="294">
+                            <div class="abilities-box">
+                                <p class="abilities-text">Дизайнерские решения</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -370,5 +379,15 @@
                 </section>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close" data-modal-close>
+                    <svg class="modal-close-button" width="11" height="11">
+                    <use href="./images/symbol-defs.svg#close-button"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    <script src="./js/modal.js"></script>
     </body>
 </html>
